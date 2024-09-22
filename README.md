@@ -36,20 +36,28 @@ Notebook: [13_KnowledgeDistillationMeta.ipynb](https://github.com/peremartra/LLM
 ### Models: 
 I trained the models over 30 epochs in a A100 GPU on Google Colab. 
 
-* "bloomz-560m-pruned-kdi-agnews"
+* [bloomz-560m-pruned-kdi-agnews](https://huggingface.co/oopere/bloomz-560m-pruned-kdi-agnews)
+  
 Epoch 1/30, Loss: 18.843030220667522 - Epoch 30/30, Loss: 0.9945140814781189
+
 bloomz-560m-pruned trained with ag_news dataset. 
 
-* "bloomz-560m-pruned-kdi-kt1"
+* [bloomz-560m-pruned-kdi-kt1](https://huggingface.co/oopere/bloomz-560m-pruned-kdi-kt1)
+  
 Epoch 1/30, Loss: 2.7381242191266715 - Epoch 30/30, Loss: 0.07271303632443056
+
 bloomz-560m-pruned trained with knowledge_transfer_1500_base dataset. 
 
-* "bloomz-560m-pruned-kdi-both"
+* [bloomz-560m-pruned-kdi-both](https://huggingface.co/oopere/bloomz-560m-pruned-kdi-both)
+  
 Epoch 1/30, Loss: 1.280850833129583 - Epoch 30/30, Loss: 0.0665320488360693
+
 bloomz-560m-pruned-kdi-agnews trained with knowledge_transfer_1500_base dataset.
 
-* "bloomz-560m-pruned-kdi-bothb"
+* [bloomz-560m-pruned-kdi-bothb](https://huggingface.co/oopere/bloomz-560m-pruned-kdi-bothb)
+  
 Epoch 1/30, Loss: 12.336102263132732 - Epoch 30/30, Loss: 1.114174348115921
+
 bloomz-560m-pruned-kdi-kti trained with ag_news dataset.
 
 ## Testing. 
