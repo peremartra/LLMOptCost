@@ -16,6 +16,17 @@ Notebook: [12_pruning.ipynb](https://github.com/peremartra/LLMOptCost/blob/main/
 
 Model Created: [bloomz-560m-pruned](https://huggingface.co/oopere/bloomz-560m-pruned)
 
+### 30-Sept Update. 
+I’ve added a new notebook on pruning, this time using structured pruning to remove the neurons with the lowest weights from the model.
+
+In this model, the neurons with the lowest L2 norm values are identified, indicating that they may have less influence on the model’s output.
+
+The modified layers are the feed-forward layers. Pruning these layers is less aggressive for the model than pruning the attention layers.
+
+I decided to prune neurons rather than entire layers because it results in a smaller alteration of the structure and avoids losing complete connections between layers. This way, the model retains its learning capacity more effectively.
+
+Notebook: [12_pruning_structured.ipynb](https://github.com/peremartra/LLMOptCost/blob/main/11/12_pruning_structured.ipynb)
+
 ## Knowledge distillation. 
 After completing the pruning process, I applied Knowledge Distillation to the pruned model. Since the goal was not to train the model for a specific task but rather to have it mimic the responses of the base model, selecting the right training datasets has been a hard decision.
 
